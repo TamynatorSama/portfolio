@@ -1,0 +1,37 @@
+.content--holder{
+    width: min(40em,80%);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+.content--holder.anim{
+    animation: slide-in 2s ease;
+}
+@keyframes slide-in {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.content--holder img{
+    align-self: flex-start;
+    object-fit: cover;
+    background-color: red;
+    width: 100%;
+    max-height: 50%;
+}
+.about--project{
+    margin-top: 1em;
+    max-width: min(35em,75%);
+}
+.about--project h2{
+    margin-bottom: 0.2em;
+    color: #364445;
+}
+.about--project p{
+    max-width: 70%;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+}

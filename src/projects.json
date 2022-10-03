@@ -1,0 +1,41 @@
+{
+    "projects":[
+        {
+            "id":1,
+            "image":"./useImage/images/room.png",
+            "title":"frontendmentor.io",
+            "description": "completed the frontendmentor.io room project with display grid"
+        },
+        {
+            "id":2,
+            "image":"./useImage/images/screen1.png",
+            "title":"grid learning projects",
+            "description": "practice project used to get familiar with the css grids"
+        },
+        {
+            "id":3,
+            "image":"./useImage/images/screenshot.png",
+            "title":"frontendmentor.io",
+            "description": "Intermediate javascript personal project for shopping website implementation"
+        },
+        {
+            "id":4,
+            "image":"./useImage/images/matrix.gif",
+            "title":"frontendmentor.io",
+            "description": "Intermediate javascript personal project for shopping website implementation"
+        },
+        {
+            "id":5,
+            "image":"./useImage/images/funiture.png",
+            "title":"Twitter inspired project",
+            "description": "Found a cool ui design on twitter by @chyyyomaa and did a rough implementation"
+        },
+        {
+            "id":6,
+            "image":"./useImage/images/chrome-capture-2022-7-2.gif",
+            "title":"Iphone calculator app",
+            "description": "Did a calcuator app for javascript practice"
+        }
+        
+    ]
+}

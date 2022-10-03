@@ -1,0 +1,31 @@
+.small{
+    text-align: center;
+    margin: 0.4em 0;
+    font-size: clamp(1.8em,10vw,2.7em);
+    color: #364445;
+}
+.small.animate{
+    animation: opa 2s ease;
+}
+@keyframes opa {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.project--holder{
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project--holder::-webkit-scrollbar{
+    width: 0;
+}

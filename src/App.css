@@ -1,0 +1,26 @@
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    background: #1E1E1E;
+    height: 100%;
+    width: 100vw;
+    padding-inline: 4vw 4vw;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-height: 674px){
+    section{
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section{
+        overflow-y: scroll;
+    }
+    
+}

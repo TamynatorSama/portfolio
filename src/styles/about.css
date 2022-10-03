@@ -1,0 +1,100 @@
+ .about{
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+}
+.real---text h1{
+    color: white;
+    font-size: clamp(4rem,8vw,5.8rem);
+    position: relative;
+    transform: translateX(0%);
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
+}
+
+.real---text span{
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    height: 6px;
+    width: 90%;
+    min-width: 2em;
+    background-color: #FFE34D;
+    max-width: 20vh;
+}
+
+.real---text span:nth-of-type(2){
+    left: 4rem;
+    bottom: -70%;
+}
+sub{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.real---text  p{
+    max-width: clamp(35em,50%,50em);
+    margin-top: min(10em,23%);
+    color: grey;
+    font-size: clamp(0.4em,8vw,0.8em);
+    transform: translate(0%);
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.6s;
+}
+
+.imagearea{
+    position: relative;
+}
+
+.imagearea img{
+    width: clamp(12em, 45vw,30em);
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    width: 0%;
+    height: 99%;
+    border-radius: 10px;
+    background-color: #ffe44d3f;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+/* animation classes */
+
+.overlay.animate{
+    width: 100%;
+}
+.real---text h1.animateText{
+    /* transform: translateX(-100%); */
+}
+.real---text  p.animateSmallText{
+    transform: translateY(100%);
+}
+
+@media screen and (max-width: 688px) {
+    .about{
+        flex-direction: column;
+        overflow-y: scroll;
+        align-items: center;
+        justify-content: start;
+    }
+    .real---text{
+        margin-top: 3em;
+    } 
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .imagearea img{
+        width: 80vw;
+        border-radius: 10px;
+    }
+
+    .imagearea{ 
+        margin-block: 3rem;
+    } 
+    .real---text  p.animateSmallText{
+        transform: translateX(0%);
+    }
+}
+

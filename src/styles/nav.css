@@ -1,0 +1,98 @@
+nav{
+    background: #1E1E1E;
+    width: 100%;
+    height: clamp(5em,10vh,6em);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 4vw 4vw;
+    color: white;
+    position: relative;
+}
+.links{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: clamp(0.8rem,1vw,1.2rem);
+}
+.links li{
+    margin-left: clamp(1.5em,3.6vw,5em);
+}
+nav h3{
+    font-size: clamp(0.6rem,1.1vw,1.1rem);
+}
+a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in ;
+}
+a:hover{
+    color: #FFE34D;
+}
+.position{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 15px;
+    height: 2px;
+    background: #FFE34D;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .line{
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin-bottom: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.line:nth-child(3).animate{
+    transform: translateY(-6.6px) translateX(1.1px) rotate(45deg);
+}
+.line:nth-child(2).animate{
+    transform: rotate(45deg);
+}
+.line:nth-child(1).animate{
+    transform-origin: 12px;
+    transform: translateY(5px) translateX(-1.5px) rotate(-45deg);
+}
+@media screen and (max-width: 688px) {
+    .links{
+        position: absolute;
+        flex-direction: column;
+        background: #1E1E1E;
+        justify-content: flex-start;
+        right: 0;
+        top: 100%;
+        width: 15rem;
+        height: clamp(15rem,30vh,20rem);
+        z-index: 222;
+        transform: translateY(-50rem);
+        transition: all 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        box-shadow: 1px 1px 35px 4px rgba(56, 56, 56, 0.196);
+        z-index: 999;
+    }
+    .links li{
+        font-size: 150%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    .position{
+        display: none;
+    }
+    nav h3{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+.links.showLinks{
+    transform: translateY(0);
+}
